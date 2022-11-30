@@ -1,0 +1,36 @@
+.about {
+  &__img {
+    border-radius: var(--br);
+    justify-self: center;
+    align-self: center;
+  }
+  &__description {
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+    color: var(--color-d);
+  }
+  &__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+    color: var(--color-d);
+  }
+
+  &__info-title {
+    font-size: var(--h2-fs);
+    font-weight: var(--font-sb);
+    color: var(--colod-d);
+  }
+  &__info-name {
+    font-size: var(--small-fs);
+  }
+  &__info-title,
+  &__info-name {
+    display: block;
+    text-align: center;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,104 @@
+/*==================== Base ====================*/
+
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section-pages {
+  position: relative;
+  max-width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6rem 2rem 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-fs);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-fs);
+  margin-bottom: var(--mb-3);
+  color: var(--color-d);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/*==================== Layout ====================*/
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages-container {
+  position: relative;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*==================== Button ====================*/
+
+.button {
+  display: inline-block;
+  background-color: var(--color-p);
+  color: #fff;
+  padding: 1rem;
+  border-radius: var(--br);
+  font-weight: var(--font-m);
+  border: 3px solid var(--color-p);
+  &:hover {
+    background-color: transparent;
+    color: var(--color-d);
+  }
+}
+
+/*==================== Scroll Up ====================*/
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: transparent;
+  border: 3px solid var(--color-p);
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: var(--br);
+  transition: 0.4s ease;
+  z-index: 50;
+  &__icon {
+    font-size: 1.5rem;
+    color: var(--color-d);
+  }
+}
+
+.show-scroll {
+  bottom: 5rem;
+}
+
+/*==================== Footer ====================*/
+
+.footer {
+  padding: 60px 0;
+  &-text {
+    text-align: center;
+    color: var(--color-d);
+  }
+}
+
+/*==================== Google Maps ====================*/

@@ -1,0 +1,140 @@
+.customize-theme {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-size: var(--small-fs);
+  display: none;
+  .card {
+    background: var(--color-w);
+    padding: 3rem;
+    border-radius: var(--br);
+    width: 40%;
+    @media screen and (max-width: 1200px) {
+      width: 50vw;
+    }
+    @media screen and (max-width: 968px) {
+      width: 58vw;
+    }
+    @media screen and (max-width: 768px) {
+      width: 75vw;
+    }
+    @media screen and (max-width: 576px) {
+      width: 96vw;
+      padding: 1rem;
+    }
+    .font-size {
+      margin-top: var(--mb-2-5);
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--color-l);
+        padding: 0.6rem 1rem;
+        border-radius: var(--br);
+      }
+      .choose-size {
+        background: hsl(252, 100%, 90%);
+        height: 0.35rem;
+        width: 100%;
+        margin: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          width: 1rem;
+          height: 1rem;
+          background: hsl(252, 100%, 90%);
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        .active {
+          background: var(--color-p);
+        }
+      }
+    }
+    .color {
+      margin-top: var(--mb-2);
+      .choose-color {
+        background: var(--color-l);
+        border-radius: var(--br);
+        padding: 0.6rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+          width: 1.8rem;
+          height: 1.8rem;
+          border-radius: 50%;
+          background: var(--color-p);
+          &:nth-child(1) {
+            background: hsl(252, 75%, 60%);
+          }
+          &:nth-child(2) {
+            background: hsl(52, 75%, 60%);
+          }
+          &:nth-child(3) {
+            background: hsl(352, 75%, 60%);
+          }
+          &:nth-child(4) {
+            background: hsl(152, 75%, 60%);
+          }
+          &:nth-child(5) {
+            background: hsl(202, 75%, 60%);
+          }
+        }
+        .active {
+          border: 5px solid #fff;
+        }
+      }
+    }
+    .background {
+      margin-top: var(--mb-2);
+      .choose-bg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.6rem;
+        > div {
+          padding: 0.8rem 0.2rem;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          border-radius: 0.4rem;
+          cursor: pointer;
+          span {
+            width: 1.4rem;
+            height: 1.4rem;
+            border: 2px solid var(--color-g);
+            border-radius: 50%;
+          }
+        }
+        .active {
+          border: 2px solid var(--color-p);
+        }
+        .bg-1 {
+          background: var(--color-l);
+          color: var(--color-d);
+        }
+        .bg-2 {
+          background: hsl(252, 30%, 17%);
+          color: #fff;
+        }
+        .bg-3 {
+          background: hsl(252, 30%, 10%);
+          color: #fff;
+        }
+      }
+    }
+    p {
+      color: var(--color-d);
+    }
+  }
+}

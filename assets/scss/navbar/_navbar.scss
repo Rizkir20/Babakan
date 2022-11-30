@@ -1,0 +1,90 @@
+/*==================== Header ====================*/
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  z-index: var(--z-f);
+}
+
+.header.sticky {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow);
+}
+
+.header.sticky .nav {
+  height: calc(2.5rem + 1rem);
+}
+
+.nav {
+  max-width: 968px;
+  height: var(--hh);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo,
+  &__toggle {
+    color: var(--color-d);
+    font-weight: var(--font-m);
+  }
+  &__logo {
+    color: var(--color-d);
+    &:hover {
+      color: var(--color-p);
+    }
+  }
+  &__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+    &:hover {
+      color: var(--color-p);
+    }
+  }
+  &__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--small-fs);
+    color: var(--color-d);
+    font-weight: var(--font-m);
+    &:hover {
+      color: var(--color-p);
+    }
+  }
+  &__icon {
+    font-size: 1.2rem;
+  }
+  &__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--color-d);
+    cursor: pointer;
+    &:hover {
+      color: var(--color-p);
+    }
+  }
+  .active-link {
+    color: var(--color-p);
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    .change-theme {
+      font-size: 1.25rem;
+      color: var(--color-d);
+      margin-right: var(--mb-1);
+      cursor: pointer;
+      &:hover {
+        color: var(--color-p);
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --hh: 3.5rem;
+
+  /*========== Colors ==========*/
+  --primary-color-hue: 352;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 92%;
+  --white-color-lightness: 100%;
+
+  --color-w: hsl(252, 30%, var(--white-color-lightness));
+  --color-l: hsl(252, 30%, var(--light-color-lightness));
+  --color-g: hsl(252, 15%, 65%);
+  --color-p: hsl(var(--primary-color-hue), 75%, 60%);
+  --color-d: hsl(252, 30%, var(--dark-color-lightness));
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --h1-fs: 2.25rem;
+  --h2-fs: 1.75rem;
+  --h3-fs: 1.25rem;
+  --normal-fs: 1rem;
+  --small-fs: 0.875rem;
+
+  /*========== Font weight ==========*/
+  --font-m: 500;
+  --font-sb: 600;
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== Border radius ==========*/
+  --br: 1.25rem;
+
+  /*========== Box shadow ==========*/
+  --bg-tc: rgba(0, 0, 0, 0.1);
+  --t-c-01: rgba(0, 0, 0, 0.1);
+  --t-c-02: rgba(106, 89, 209, 0.1);
+  --color-filter: invert(1);
+  --bs: 0px 0px 20px rgb(0 0 0 / 10%);
+  --shadow: 0px 0px 20px #e0e0e0;
+
+  /*========== z index ==========*/
+  --z-tl: 10;
+  --z-f: 100;
+  --z-m: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+::-webkit-slider-thumb {
+  background: var(--color-p);
+  border-radius: 2em;
+  &:hover {
+    background: var(--color-p);
+  }
+}
+
+body {
+  margin: 0 0 var(--hh) 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-fs);
+  background-color: var(--color-l);
+  transition: 0.3s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-weight: var(--font-sb);
+  color: var(--color-d);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
